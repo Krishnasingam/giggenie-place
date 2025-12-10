@@ -1,4 +1,4 @@
-import { Linkedin, Twitter, Facebook, Instagram } from "lucide-react";
+import { Linkedin, Mail, Phone, MapPin } from "lucide-react";
 import logo from "@/assets/peakedge-logo.png";
 
 const Footer = () => {
@@ -28,13 +28,6 @@ const Footer = () => {
     ],
   };
 
-  const socialLinks = [
-    { icon: Linkedin, href: "#", label: "LinkedIn" },
-    { icon: Twitter, href: "#", label: "Twitter" },
-    { icon: Facebook, href: "#", label: "Facebook" },
-    { icon: Instagram, href: "#", label: "Instagram" },
-  ];
-
   return (
     <footer className="bg-primary text-primary-foreground">
       <div className="container mx-auto px-4 lg:px-8 py-16">
@@ -44,22 +37,37 @@ const Footer = () => {
             <a href="/" className="flex items-center mb-6">
               <img src={logo} alt="Peakedge IT Solutions" className="h-14 w-auto brightness-0 invert" />
             </a>
-            <p className="text-primary-foreground/70 mb-6 max-w-xs">
-              Connecting exceptional IT professionals with innovative companies since 2012.
+            <p className="text-primary-foreground/70 mb-4 max-w-xs">
+              Innovating Beyond Limits
             </p>
+            
+            {/* Contact Info */}
+            <div className="space-y-3 mb-6">
+              <a href="mailto:info@peakedgeit.com" className="flex items-center gap-2 text-primary-foreground/70 hover:text-primary-foreground transition-colors">
+                <Mail className="w-4 h-4" />
+                <span className="text-sm">info@peakedgeit.com</span>
+              </a>
+              <a href="tel:+1-469-917-1680" className="flex items-center gap-2 text-primary-foreground/70 hover:text-primary-foreground transition-colors">
+                <Phone className="w-4 h-4" />
+                <span className="text-sm">(469) 917-1680</span>
+              </a>
+              <div className="flex items-start gap-2 text-primary-foreground/70">
+                <MapPin className="w-4 h-4 mt-0.5 flex-shrink-0" />
+                <span className="text-sm">1021 E Lincolnway Suite #9247, Cheyenne, Wyoming 82001, United States</span>
+              </div>
+            </div>
             
             {/* Social Links */}
             <div className="flex gap-3">
-              {socialLinks.map((social) => (
-                <a
-                  key={social.label}
-                  href={social.href}
-                  aria-label={social.label}
-                  className="w-10 h-10 rounded-lg bg-primary-foreground/10 flex items-center justify-center hover:bg-primary-foreground/20 transition-colors duration-200"
-                >
-                  <social.icon className="w-5 h-5" />
-                </a>
-              ))}
+              <a
+                href="https://www.linkedin.com/company/peakedge-it-solutions"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="LinkedIn"
+                className="w-10 h-10 rounded-lg bg-primary-foreground/10 flex items-center justify-center hover:bg-primary-foreground/20 transition-colors duration-200"
+              >
+                <Linkedin className="w-5 h-5" />
+              </a>
             </div>
           </div>
 
