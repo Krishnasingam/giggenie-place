@@ -35,7 +35,7 @@ const Footer = () => {
           {/* Brand Column */}
           <div className="col-span-2 lg:col-span-2">
             <a href="/" className="flex items-center mb-6">
-              <img src={logo} alt="Peakedge IT Solutions" className="h-14 w-auto brightness-0 invert" />
+              <img src={logo} alt="Peakedge IT Solutions" className="h-14 w-auto rounded-lg" />
             </a>
             <p className="text-primary-foreground/70 mb-4 max-w-xs">
               Innovating Beyond Limits

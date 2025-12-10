@@ -3,9 +3,9 @@ import { ArrowRight, Users, Briefcase, TrendingUp } from "lucide-react";
 
 const Hero = () => {
   const stats = [
-    { icon: Users, value: "10,000+", label: "IT Professionals" },
-    { icon: Briefcase, value: "500+", label: "Partner Companies" },
-    { icon: TrendingUp, value: "95%", label: "Placement Rate" },
+    { icon: Users, value: "100+", label: "IT Consultants" },
+    { icon: Briefcase, value: "50+", label: "Enterprise Clients" },
+    { icon: TrendingUp, value: "99%", label: "Client Satisfaction" },
   ];
 
   return (
@@ -31,30 +31,29 @@ const Hero = () => {
           {/* Badge */}
           <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-card/10 border border-card/20 text-card text-sm font-medium mb-8 animate-fade-up">
             <span className="w-2 h-2 rounded-full bg-accent animate-pulse" />
-            Trusted by Fortune 500 Companies
+            Innovating Beyond Limits
           </div>
 
           {/* Headline */}
           <h1 className="text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-heading font-bold text-card leading-tight mb-6 animate-fade-up delay-100">
-            Connect with
-            <span className="text-gradient"> Elite IT Talent</span>
-            <br />in Record Time
+            Transform Your Business with
+            <span className="text-gradient"> Expert IT Solutions</span>
           </h1>
 
           {/* Subheadline */}
           <p className="text-lg md:text-xl text-card/70 max-w-2xl mx-auto mb-10 animate-fade-up delay-200">
-            We bridge the gap between exceptional IT professionals and innovative companies. 
-            Whether you're hiring or seeking your next career move, we've got you covered.
+            Peakedge IT Solutions delivers cutting-edge technology consulting, staffing, and managed services 
+            to help businesses scale and succeed in the digital age.
           </p>
 
           {/* CTAs */}
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-16 animate-fade-up delay-300">
             <Button variant="hero" size="xl" className="w-full sm:w-auto">
-              I'm Hiring
+              Get Started
               <ArrowRight className="w-5 h-5" />
             </Button>
             <Button variant="heroOutline" size="xl" className="w-full sm:w-auto">
-              I'm Looking for Work
+              Our Services
             </Button>
           </div>
 
