@@ -1,4 +1,5 @@
 import { Linkedin, Twitter, Facebook, Instagram } from "lucide-react";
+import logo from "@/assets/peakedge-logo.png";
 
 const Footer = () => {
   const footerLinks = {
@@ -40,11 +41,8 @@ const Footer = () => {
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8 lg:gap-12">
           {/* Brand Column */}
           <div className="col-span-2 lg:col-span-2">
-            <a href="/" className="flex items-center gap-2 mb-6">
-              <div className="w-10 h-10 rounded-lg bg-gradient-accent flex items-center justify-center">
-                <span className="text-accent-foreground font-heading font-bold text-xl">P</span>
-              </div>
-              <span className="font-heading font-bold text-xl">Peakedge IT</span>
+            <a href="/" className="flex items-center mb-6">
+              <img src={logo} alt="Peakedge IT Solutions" className="h-14 w-auto brightness-0 invert" />
             </a>
             <p className="text-primary-foreground/70 mb-6 max-w-xs">
               Connecting exceptional IT professionals with innovative companies since 2012.

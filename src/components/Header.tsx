@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
+import logo from "@/assets/peakedge-logo.png";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -17,11 +18,8 @@ const Header = () => {
       <div className="container mx-auto px-4 lg:px-8">
         <div className="flex items-center justify-between h-16 lg:h-20">
           {/* Logo */}
-          <a href="/" className="flex items-center gap-2">
-            <div className="w-10 h-10 rounded-lg bg-gradient-accent flex items-center justify-center">
-              <span className="text-accent-foreground font-heading font-bold text-xl">P</span>
-            </div>
-            <span className="font-heading font-bold text-xl text-foreground">Peakedge IT</span>
+          <a href="/" className="flex items-center">
+            <img src={logo} alt="Peakedge IT Solutions" className="h-12 w-auto" />
           </a>
 
           {/* Desktop Navigation */}
