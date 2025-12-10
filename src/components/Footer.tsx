@@ -42,9 +42,9 @@ const Footer = () => {
           <div className="col-span-2 lg:col-span-2">
             <a href="/" className="flex items-center gap-2 mb-6">
               <div className="w-10 h-10 rounded-lg bg-gradient-accent flex items-center justify-center">
-                <span className="text-accent-foreground font-heading font-bold text-xl">T</span>
+                <span className="text-accent-foreground font-heading font-bold text-xl">P</span>
               </div>
-              <span className="font-heading font-bold text-xl">TechTalent</span>
+              <span className="font-heading font-bold text-xl">Peakedge IT</span>
             </a>
             <p className="text-primary-foreground/70 mb-6 max-w-xs">
               Connecting exceptional IT professionals with innovative companies since 2012.
@@ -137,7 +137,7 @@ const Footer = () => {
         {/* Bottom Bar */}
         <div className="mt-16 pt-8 border-t border-primary-foreground/10 flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="text-primary-foreground/60 text-sm">
-            © 2024 TechTalent. All rights reserved.
+            © 2024 Peakedge IT Solutions LLC. All rights reserved.
           </p>
           <p className="text-primary-foreground/60 text-sm">
             Made with passion for connecting talent with opportunity.

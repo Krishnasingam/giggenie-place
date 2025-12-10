@@ -19,9 +19,9 @@ const Header = () => {
           {/* Logo */}
           <a href="/" className="flex items-center gap-2">
             <div className="w-10 h-10 rounded-lg bg-gradient-accent flex items-center justify-center">
-              <span className="text-accent-foreground font-heading font-bold text-xl">T</span>
+              <span className="text-accent-foreground font-heading font-bold text-xl">P</span>
             </div>
-            <span className="font-heading font-bold text-xl text-foreground">TechTalent</span>
+            <span className="font-heading font-bold text-xl text-foreground">Peakedge IT</span>
           </a>
 
           {/* Desktop Navigation */}
