@@ -1,19 +1,14 @@
 import { Button } from "@/components/ui/button";
-import { ArrowRight, Users, Briefcase, TrendingUp } from "lucide-react";
+import { ArrowRight, Globe, Users, Building2 } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const Hero = () => {
-  const stats = [
-    { icon: Users, value: "100+", label: "IT Consultants" },
-    { icon: Briefcase, value: "50+", label: "Enterprise Clients" },
-    { icon: TrendingUp, value: "99%", label: "Client Satisfaction" },
-  ];
-
   return (
     <section className="relative min-h-screen bg-hero overflow-hidden">
       {/* Background Pattern */}
       <div className="absolute inset-0 opacity-10">
-        <div className="absolute top-20 left-10 w-72 h-72 bg-accent rounded-full blur-3xl" />
-        <div className="absolute bottom-20 right-10 w-96 h-96 bg-accent rounded-full blur-3xl" />
+        <div className="absolute top-20 left-10 w-72 h-72 bg-primary rounded-full blur-3xl" />
+        <div className="absolute bottom-20 right-10 w-96 h-96 bg-primary rounded-full blur-3xl" />
       </div>
 
       {/* Grid Pattern Overlay */}
@@ -27,50 +22,64 @@ const Hero = () => {
       />
 
       <div className="container mx-auto px-4 lg:px-8 pt-32 lg:pt-40 pb-20 relative z-10">
-        <div className="max-w-4xl mx-auto text-center">
+        <div className="max-w-5xl mx-auto text-center">
           {/* Badge */}
-          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-card/10 border border-card/20 text-card text-sm font-medium mb-8 animate-fade-up">
-            <span className="w-2 h-2 rounded-full bg-accent animate-pulse" />
-            Innovating Beyond Limits
+          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary-foreground/10 border border-primary-foreground/20 text-primary-foreground text-sm font-medium mb-8 animate-fade-up">
+            <Globe className="w-4 h-4" />
+            Offices in India & USA • Global Delivery • Experienced IT Teams
           </div>
 
           {/* Headline */}
-          <h1 className="text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-heading font-bold text-card leading-tight mb-6 animate-fade-up delay-100">
-            Transform Your Business with
-            <span className="text-gradient"> Expert IT Solutions</span>
+          <h1 className="text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-heading font-bold text-primary-foreground leading-tight mb-6 animate-fade-up delay-100">
+            PeakEdge — Global IT
+            <span className="text-gradient"> Services & Staffing</span>
           </h1>
 
           {/* Subheadline */}
-          <p className="text-lg md:text-xl text-card/70 max-w-2xl mx-auto mb-10 animate-fade-up delay-200">
-            Peakedge IT Solutions delivers cutting-edge technology consulting, staffing, and managed services 
-            to help businesses scale and succeed in the digital age.
+          <p className="text-lg md:text-xl text-primary-foreground/80 max-w-3xl mx-auto mb-10 animate-fade-up delay-200">
+            Delivering staffing, software engineering, cloud, data and AI solutions from India & USA. 
+            Transform your business with our experienced global teams.
           </p>
 
-          {/* CTAs */}
-          <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-16 animate-fade-up delay-300">
-            <Button variant="hero" size="xl" className="w-full sm:w-auto">
-              Get Started
-              <ArrowRight className="w-5 h-5" />
-            </Button>
-            <Button variant="heroOutline" size="xl" className="w-full sm:w-auto">
-              Our Services
-            </Button>
+          {/* Dual CTAs */}
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-12 animate-fade-up delay-300">
+            <Link to="/us">
+              <Button variant="hero" size="xl" className="w-full sm:w-auto">
+                🇺🇸 Hire Talent — USA
+                <ArrowRight className="w-5 h-5" />
+              </Button>
+            </Link>
+            <Link to="/in">
+              <Button variant="heroOutline" size="xl" className="w-full sm:w-auto">
+                🇮🇳 Hire Talent — India
+                <ArrowRight className="w-5 h-5" />
+              </Button>
+            </Link>
           </div>
 
-          {/* Stats */}
+          {/* Trust Bar */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-12 animate-fade-up delay-400">
-            {stats.map((stat) => (
-              <div 
-                key={stat.label}
-                className="flex flex-col items-center p-6 rounded-2xl bg-card/5 border border-card/10 backdrop-blur-sm"
-              >
-                <stat.icon className="w-8 h-8 text-accent mb-3" />
-                <span className="text-3xl lg:text-4xl font-heading font-bold text-card mb-1">
-                  {stat.value}
-                </span>
-                <span className="text-card/60 text-sm">{stat.label}</span>
-              </div>
-            ))}
+            <div className="flex flex-col items-center p-6 rounded-2xl bg-primary-foreground/5 border border-primary-foreground/10 backdrop-blur-sm">
+              <Globe className="w-8 h-8 text-primary mb-3" />
+              <span className="text-3xl lg:text-4xl font-heading font-bold text-primary-foreground mb-1">
+                2
+              </span>
+              <span className="text-primary-foreground/60 text-sm">Global Offices</span>
+            </div>
+            <div className="flex flex-col items-center p-6 rounded-2xl bg-primary-foreground/5 border border-primary-foreground/10 backdrop-blur-sm">
+              <Users className="w-8 h-8 text-primary mb-3" />
+              <span className="text-3xl lg:text-4xl font-heading font-bold text-primary-foreground mb-1">
+                100+
+              </span>
+              <span className="text-primary-foreground/60 text-sm">IT Consultants</span>
+            </div>
+            <div className="flex flex-col items-center p-6 rounded-2xl bg-primary-foreground/5 border border-primary-foreground/10 backdrop-blur-sm">
+              <Building2 className="w-8 h-8 text-primary mb-3" />
+              <span className="text-3xl lg:text-4xl font-heading font-bold text-primary-foreground mb-1">
+                50+
+              </span>
+              <span className="text-primary-foreground/60 text-sm">Enterprise Clients</span>
+            </div>
           </div>
         </div>
       </div>
