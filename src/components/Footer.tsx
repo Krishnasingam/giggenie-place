@@ -8,16 +8,9 @@ const Footer = () => {
       { label: "Services", href: "/#services" },
       { label: "How It Works", href: "/#how-it-works" },
       { label: "About", href: "/about" },
-      { label: "Contact", href: "/contact" },
-    ],
-    locations: [
-      { label: "USA Office", href: "/us" },
-      { label: "India Office", href: "/in" },
-    ],
-    resources: [
       { label: "Careers", href: "/careers" },
+      { label: "Contact", href: "/contact" },
       { label: "Privacy Policy", href: "/privacy" },
-      { label: "Sitemap", href: "/sitemap.xml" },
     ],
   };
 
@@ -31,7 +24,7 @@ const Footer = () => {
               <img src={logo} alt="PeakEdge" className="h-14 w-auto rounded-lg" />
             </Link>
             <p className="text-background/70 mb-6 text-sm">
-              Global IT Services & Staffing — Delivering excellence from India & USA
+              Global IT Services & Staffing — Delivering excellence from our USA and India offices.
             </p>
             
             {/* Social Links */}
@@ -111,25 +104,6 @@ const Footer = () => {
                   )}
                 </li>
               ))}
-              {footerLinks.resources.map((link) => (
-                <li key={link.label}>
-                  {link.href.endsWith(".xml") ? (
-                    <a 
-                      href={link.href}
-                      className="text-background/70 hover:text-background transition-colors duration-200"
-                    >
-                      {link.label}
-                    </a>
-                  ) : (
-                    <Link 
-                      to={link.href}
-                      className="text-background/70 hover:text-background transition-colors duration-200"
-                    >
-                      {link.label}
-                    </Link>
-                  )}
-                </li>
-              ))}
             </ul>
           </div>
         </div>
@@ -137,7 +111,7 @@ const Footer = () => {
         {/* Bottom Bar */}
         <div className="mt-16 pt-8 border-t border-background/10 flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="text-background/60 text-sm text-center md:text-left">
-            © {new Date().getFullYear()} PeakEdge IT Solutions LLC (USA) | PeakEdge Solutions Pvt Ltd (India). All rights reserved.
+            © {new Date().getFullYear()} PeakEdge — PeakEdge IT Solutions LLC (USA) | PeakEdge Solutions Pvt Ltd (India). All rights reserved.
           </p>
         </div>
       </div>

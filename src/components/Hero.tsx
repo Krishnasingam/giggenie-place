@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { ArrowRight, Globe, Users, Building2 } from "lucide-react";
+import { ArrowRight, Globe, Users, Building2, MapPin } from "lucide-react";
 import { Link } from "react-router-dom";
 
 const Hero = () => {
@@ -26,7 +26,7 @@ const Hero = () => {
           {/* Badge */}
           <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary-foreground/10 border border-primary-foreground/20 text-primary-foreground text-sm font-medium mb-8 animate-fade-up">
             <Globe className="w-4 h-4" />
-            Offices in India & USA • Global Delivery • Experienced IT Teams
+            Global IT Services • USA & India Offices • Experienced Teams
           </div>
 
           {/* Headline */}
@@ -37,24 +37,37 @@ const Hero = () => {
 
           {/* Subheadline */}
           <p className="text-lg md:text-xl text-primary-foreground/80 max-w-3xl mx-auto mb-10 animate-fade-up delay-200">
-            Delivering staffing, software engineering, cloud, data and AI solutions from India & USA. 
-            Transform your business with our experienced global teams.
+            Delivering staffing, software engineering, cloud, data, and AI solutions 
+            from our USA and India offices.
           </p>
 
-          {/* Dual CTAs */}
+          {/* Dual CTAs - Contact focused */}
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-12 animate-fade-up delay-300">
-            <Link to="/us">
+            <Link to="/contact#usa">
               <Button variant="hero" size="xl" className="w-full sm:w-auto">
-                🇺🇸 Hire Talent — USA
+                Contact USA Office
                 <ArrowRight className="w-5 h-5" />
               </Button>
             </Link>
-            <Link to="/in">
+            <Link to="/contact#india">
               <Button variant="heroOutline" size="xl" className="w-full sm:w-auto">
-                🇮🇳 Hire Talent — India
+                Contact India Office
                 <ArrowRight className="w-5 h-5" />
               </Button>
             </Link>
+          </div>
+
+          {/* Office Locations Quick View */}
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-6 mb-12 animate-fade-up delay-350">
+            <div className="flex items-center gap-2 text-primary-foreground/70 text-sm">
+              <MapPin className="w-4 h-4" />
+              <span>🇺🇸 Cheyenne, WY</span>
+            </div>
+            <div className="hidden sm:block w-px h-4 bg-primary-foreground/30" />
+            <div className="flex items-center gap-2 text-primary-foreground/70 text-sm">
+              <MapPin className="w-4 h-4" />
+              <span>🇮🇳 Hyderabad, India</span>
+            </div>
           </div>
 
           {/* Trust Bar */}
