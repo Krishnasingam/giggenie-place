@@ -1,14 +1,8 @@
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
-import { Menu, X, ChevronDown, Globe } from "lucide-react";
+import { Menu, X, MapPin } from "lucide-react";
 import { Link, useLocation } from "react-router-dom";
 import logo from "@/assets/peakedge-logo.png";
-import {
-  DropdownMenu,
-  DropdownMenuContent,
-  DropdownMenuItem,
-  DropdownMenuTrigger,
-} from "@/components/ui/dropdown-menu";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -18,7 +12,8 @@ const Header = () => {
     { label: "Services", href: "/#services" },
     { label: "How It Works", href: "/#how-it-works" },
     { label: "About", href: "/about" },
-    { label: "Contact", href: "/contact" },
+    { label: "Contact Us", href: "/contact" },
+    { label: "Careers", href: "/careers" },
   ];
 
   const isActive = (href: string) => {
@@ -31,8 +26,8 @@ const Header = () => {
       <div className="container mx-auto px-4 lg:px-8">
         <div className="flex items-center justify-between h-16 lg:h-20">
           {/* Logo */}
-          <Link to="/" className="flex items-center">
-            <img src={logo} alt="PeakEdge IT Solutions" className="h-12 w-auto" />
+          <Link to="/" className="flex items-center gap-3">
+            <img src={logo} alt="PeakEdge" className="h-12 w-auto" />
           </Link>
 
           {/* Desktop Navigation */}
@@ -62,35 +57,17 @@ const Header = () => {
             ))}
           </nav>
 
-          {/* Desktop CTAs */}
-          <div className="hidden lg:flex items-center gap-3">
-            {/* Country Selector */}
-            <DropdownMenu>
-              <DropdownMenuTrigger asChild>
-                <Button variant="ghost" size="sm" className="gap-2">
-                  <Globe className="w-4 h-4" />
-                  <ChevronDown className="w-3 h-3" />
-                </Button>
-              </DropdownMenuTrigger>
-              <DropdownMenuContent align="end">
-                <DropdownMenuItem asChild>
-                  <Link to="/us" className="flex items-center gap-2 cursor-pointer">
-                    🇺🇸 USA
-                  </Link>
-                </DropdownMenuItem>
-                <DropdownMenuItem asChild>
-                  <Link to="/in" className="flex items-center gap-2 cursor-pointer">
-                    🇮🇳 India
-                  </Link>
-                </DropdownMenuItem>
-              </DropdownMenuContent>
-            </DropdownMenu>
-
-            <Link to="/us">
-              <Button variant="outline" size="sm">🇺🇸 Hire in USA</Button>
+          {/* Desktop CTA - Office Indicator */}
+          <div className="hidden lg:flex items-center gap-4">
+            <Link 
+              to="/contact" 
+              className="flex items-center gap-2 text-sm text-muted-foreground hover:text-foreground transition-colors"
+            >
+              <MapPin className="w-4 h-4" />
+              <span>USA & India Offices</span>
             </Link>
-            <Link to="/in">
-              <Button variant="default" size="sm">🇮🇳 Hire in India</Button>
+            <Link to="/contact">
+              <Button variant="default" size="sm">Get in Touch</Button>
             </Link>
           </div>
 
@@ -134,11 +111,16 @@ const Header = () => {
                 )
               ))}
               <div className="flex flex-col gap-3 pt-4 border-t border-border">
-                <Link to="/us" onClick={() => setIsMenuOpen(false)}>
-                  <Button variant="outline" className="w-full">🇺🇸 Hire Talent — USA</Button>
+                <Link 
+                  to="/contact" 
+                  className="flex items-center gap-2 text-sm text-muted-foreground py-2"
+                  onClick={() => setIsMenuOpen(false)}
+                >
+                  <MapPin className="w-4 h-4" />
+                  <span>USA & India Offices</span>
                 </Link>
-                <Link to="/in" onClick={() => setIsMenuOpen(false)}>
-                  <Button variant="default" className="w-full">🇮🇳 Hire Talent — India</Button>
+                <Link to="/contact" onClick={() => setIsMenuOpen(false)}>
+                  <Button variant="default" className="w-full">Get in Touch</Button>
                 </Link>
               </div>
             </nav>
