@@ -43,9 +43,7 @@ const Footer = () => {
 
           {/* USA Office */}
           <div>
-            <h4 className="font-heading font-semibold mb-4 flex items-center gap-2">
-              🇺🇸 USA Office
-            </h4>
+            <h4 className="font-heading font-semibold mb-4">United States</h4>
             <div className="space-y-3 text-sm">
               <p className="text-background/90 font-medium">PeakEdge IT Solutions LLC</p>
               <div className="flex items-start gap-2 text-background/70">
@@ -65,9 +63,7 @@ const Footer = () => {
 
           {/* India Office */}
           <div>
-            <h4 className="font-heading font-semibold mb-4 flex items-center gap-2">
-              🇮🇳 India Office
-            </h4>
+            <h4 className="font-heading font-semibold mb-4">India</h4>
             <div className="space-y-3 text-sm">
               <p className="text-background/90 font-medium">PeakEdge Solutions Pvt Ltd</p>
               <div className="flex items-start gap-2 text-background/70">
@@ -111,7 +107,7 @@ const Footer = () => {
         {/* Bottom Bar */}
         <div className="mt-16 pt-8 border-t border-background/10 flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="text-background/60 text-sm text-center md:text-left">
-            © {new Date().getFullYear()} PeakEdge — PeakEdge IT Solutions LLC (USA) | PeakEdge Solutions Pvt Ltd (India). All rights reserved.
+            © {new Date().getFullYear()} PeakEdge. All rights reserved.
           </p>
         </div>
       </div>
