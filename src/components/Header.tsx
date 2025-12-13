@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
-import { Menu, X, MapPin } from "lucide-react";
+import { Menu, X } from "lucide-react";
 import { Link, useLocation } from "react-router-dom";
 import logo from "@/assets/peakedge-logo.png";
 
@@ -57,15 +57,8 @@ const Header = () => {
             ))}
           </nav>
 
-          {/* Desktop CTA - Office Indicator */}
-          <div className="hidden lg:flex items-center gap-4">
-            <Link 
-              to="/contact" 
-              className="flex items-center gap-2 text-sm text-muted-foreground hover:text-foreground transition-colors"
-            >
-              <MapPin className="w-4 h-4" />
-              <span>USA & India Offices</span>
-            </Link>
+          {/* Desktop CTA */}
+          <div className="hidden lg:flex items-center">
             <Link to="/contact">
               <Button variant="default" size="sm">Get in Touch</Button>
             </Link>
@@ -110,15 +103,7 @@ const Header = () => {
                   </Link>
                 )
               ))}
-              <div className="flex flex-col gap-3 pt-4 border-t border-border">
-                <Link 
-                  to="/contact" 
-                  className="flex items-center gap-2 text-sm text-muted-foreground py-2"
-                  onClick={() => setIsMenuOpen(false)}
-                >
-                  <MapPin className="w-4 h-4" />
-                  <span>USA & India Offices</span>
-                </Link>
+              <div className="pt-4 border-t border-border">
                 <Link to="/contact" onClick={() => setIsMenuOpen(false)}>
                   <Button variant="default" className="w-full">Get in Touch</Button>
                 </Link>
