@@ -44,13 +44,13 @@ const Hero = () => {
           {/* Modern CTAs */}
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-16 animate-fade-up delay-300">
             <Link to="/contact">
-              <Button variant="hero" size="xl" className="w-full sm:w-auto">
+              <Button variant="hero" size="xl" className="w-full sm:w-auto btn-animate">
                 Get Started
-                <ArrowRight className="w-5 h-5" />
+                <ArrowRight className="w-5 h-5 transition-transform group-hover:translate-x-1" />
               </Button>
             </Link>
             <a href="/#services">
-              <Button variant="heroOutline" size="xl" className="w-full sm:w-auto">
+              <Button variant="heroOutline" size="xl" className="w-full sm:w-auto hover-scale">
                 Explore Services
               </Button>
             </a>
@@ -58,22 +58,22 @@ const Hero = () => {
 
           {/* Trust Bar */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-12 animate-fade-up delay-400">
-            <div className="flex flex-col items-center p-6 rounded-2xl bg-primary-foreground/5 border border-primary-foreground/10 backdrop-blur-sm">
-              <Globe className="w-8 h-8 text-primary mb-3" />
+            <div className="group flex flex-col items-center p-6 rounded-2xl bg-primary-foreground/5 border border-primary-foreground/10 backdrop-blur-sm hover-lift cursor-default">
+              <Globe className="w-8 h-8 text-primary mb-3 icon-bounce" />
               <span className="text-3xl lg:text-4xl font-heading font-bold text-primary-foreground mb-1">
                 2
               </span>
               <span className="text-primary-foreground/60 text-sm">Global Offices</span>
             </div>
-            <div className="flex flex-col items-center p-6 rounded-2xl bg-primary-foreground/5 border border-primary-foreground/10 backdrop-blur-sm">
-              <Users className="w-8 h-8 text-primary mb-3" />
+            <div className="group flex flex-col items-center p-6 rounded-2xl bg-primary-foreground/5 border border-primary-foreground/10 backdrop-blur-sm hover-lift cursor-default">
+              <Users className="w-8 h-8 text-primary mb-3 icon-bounce" />
               <span className="text-3xl lg:text-4xl font-heading font-bold text-primary-foreground mb-1">
                 100+
               </span>
               <span className="text-primary-foreground/60 text-sm">IT Consultants</span>
             </div>
-            <div className="flex flex-col items-center p-6 rounded-2xl bg-primary-foreground/5 border border-primary-foreground/10 backdrop-blur-sm">
-              <Building2 className="w-8 h-8 text-primary mb-3" />
+            <div className="group flex flex-col items-center p-6 rounded-2xl bg-primary-foreground/5 border border-primary-foreground/10 backdrop-blur-sm hover-lift cursor-default">
+              <Building2 className="w-8 h-8 text-primary mb-3 icon-bounce" />
               <span className="text-3xl lg:text-4xl font-heading font-bold text-primary-foreground mb-1">
                 50+
               </span>
