@@ -96,10 +96,11 @@ const Contact = () => {
             <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto mb-16">
               {/* USA Office */}
               <div id="usa" className="scroll-mt-24 p-8 rounded-2xl bg-card border border-border shadow-soft">
-                <h2 className="font-heading font-bold text-xl text-foreground mb-4 flex items-center gap-2">
-                  🇺🇸 USA Office
+                <h3 className="text-xs font-medium text-primary uppercase tracking-wider mb-2">United States</h3>
+                <h2 className="font-heading font-bold text-xl text-foreground mb-4">
+                  PeakEdge IT Solutions LLC
                 </h2>
-                <p className="text-sm font-semibold text-foreground mb-3">PeakEdge IT Solutions LLC</p>
+                
                 <div className="space-y-3 mb-6">
                   <a
                     href="https://maps.google.com/?q=1021+E+Lincolnway,+Cheyenne,+WY+82001"
@@ -141,10 +142,10 @@ const Contact = () => {
 
               {/* India Office */}
               <div id="india" className="scroll-mt-24 p-8 rounded-2xl bg-card border border-border shadow-soft">
-                <h2 className="font-heading font-bold text-xl text-foreground mb-4 flex items-center gap-2">
-                  🇮🇳 India Office
+                <h3 className="text-xs font-medium text-primary uppercase tracking-wider mb-2">India</h3>
+                <h2 className="font-heading font-bold text-xl text-foreground mb-4">
+                  PeakEdge Solutions Pvt Ltd
                 </h2>
-                <p className="text-sm font-semibold text-foreground mb-3">PeakEdge Solutions Pvt Ltd</p>
                 <div className="space-y-3 mb-6">
                   <div className="flex items-start gap-3 text-muted-foreground">
                     <MapPin className="w-5 h-5 mt-0.5 flex-shrink-0" />
@@ -217,9 +218,9 @@ const Contact = () => {
                         <SelectValue placeholder="Select an office" />
                       </SelectTrigger>
                       <SelectContent>
-                        <SelectItem value="usa">🇺🇸 Contact USA Office</SelectItem>
-                        <SelectItem value="india">🇮🇳 Contact India Office</SelectItem>
-                        <SelectItem value="both">Either / Not sure</SelectItem>
+                        <SelectItem value="usa">USA Office</SelectItem>
+                        <SelectItem value="india">India Office</SelectItem>
+                        <SelectItem value="both">General Inquiry</SelectItem>
                       </SelectContent>
                     </Select>
                   </div>
