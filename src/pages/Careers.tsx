@@ -4,8 +4,14 @@ import { Link } from "react-router-dom";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { Helmet } from "react-helmet-async";
+import useScrollAnimation from "@/hooks/useScrollAnimation";
 
 const Careers = () => {
+  const whyJoinAnimation = useScrollAnimation({ threshold: 0.2 });
+  const benefitsAnimation = useScrollAnimation({ threshold: 0.1 });
+  const positionsHeaderAnimation = useScrollAnimation({ threshold: 0.2 });
+  const positionsListAnimation = useScrollAnimation({ threshold: 0.1 });
+
   const openPositions = [
     {
       title: "Senior Full Stack Developer",
@@ -46,10 +52,10 @@ const Careers = () => {
         {/* Hero Section */}
         <section className="py-16 lg:py-24 bg-hero">
           <div className="container mx-auto px-4 lg:px-8 text-center">
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-heading font-bold text-primary-foreground mb-6">
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-heading font-bold text-primary-foreground mb-6 animate-fade-up">
               Join Our Team
             </h1>
-            <p className="text-lg md:text-xl text-primary-foreground/80 max-w-2xl mx-auto">
+            <p className="text-lg md:text-xl text-primary-foreground/80 max-w-2xl mx-auto animate-fade-up delay-100">
               Build your career with a global IT company that values innovation, 
               collaboration, and professional growth.
             </p>
@@ -59,7 +65,10 @@ const Careers = () => {
         {/* Why Join Us */}
         <section className="py-16 lg:py-24">
           <div className="container mx-auto px-4 lg:px-8">
-            <div className="text-center max-w-3xl mx-auto mb-12">
+            <div 
+              ref={whyJoinAnimation.ref}
+              className={`text-center max-w-3xl mx-auto mb-12 scroll-fade-up ${whyJoinAnimation.isVisible ? 'visible' : ''}`}
+            >
               <h2 className="text-3xl md:text-4xl font-heading font-bold text-foreground mb-4">
                 Why Work at PeakEdge?
               </h2>
@@ -69,27 +78,25 @@ const Careers = () => {
               </p>
             </div>
 
-            <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
-              <div className="p-6 rounded-2xl bg-card border border-border text-center">
-                <div className="text-3xl mb-3">🌍</div>
-                <h3 className="font-heading font-semibold text-foreground mb-2">Global Exposure</h3>
-                <p className="text-muted-foreground text-sm">Work with clients across the world</p>
-              </div>
-              <div className="p-6 rounded-2xl bg-card border border-border text-center">
-                <div className="text-3xl mb-3">📈</div>
-                <h3 className="font-heading font-semibold text-foreground mb-2">Career Growth</h3>
-                <p className="text-muted-foreground text-sm">Clear paths for advancement</p>
-              </div>
-              <div className="p-6 rounded-2xl bg-card border border-border text-center">
-                <div className="text-3xl mb-3">🏠</div>
-                <h3 className="font-heading font-semibold text-foreground mb-2">Flexible Work</h3>
-                <p className="text-muted-foreground text-sm">Remote and hybrid options</p>
-              </div>
-              <div className="p-6 rounded-2xl bg-card border border-border text-center">
-                <div className="text-3xl mb-3">💡</div>
-                <h3 className="font-heading font-semibold text-foreground mb-2">Innovation</h3>
-                <p className="text-muted-foreground text-sm">Work on cutting-edge tech</p>
-              </div>
+            <div 
+              ref={benefitsAnimation.ref}
+              className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-16"
+            >
+              {[
+                { emoji: "🌍", title: "Global Exposure", desc: "Work with clients across the world" },
+                { emoji: "📈", title: "Career Growth", desc: "Clear paths for advancement" },
+                { emoji: "🏠", title: "Flexible Work", desc: "Remote and hybrid options" },
+                { emoji: "💡", title: "Innovation", desc: "Work on cutting-edge tech" },
+              ].map((benefit, index) => (
+                <div 
+                  key={benefit.title}
+                  className={`group p-6 rounded-2xl bg-card border border-border text-center card-animate scroll-fade-up stagger-${index + 1} ${benefitsAnimation.isVisible ? 'visible' : ''}`}
+                >
+                  <div className="text-3xl mb-3 icon-bounce">{benefit.emoji}</div>
+                  <h3 className="font-heading font-semibold text-foreground mb-2">{benefit.title}</h3>
+                  <p className="text-muted-foreground text-sm">{benefit.desc}</p>
+                </div>
+              ))}
             </div>
           </div>
         </section>
@@ -97,7 +104,10 @@ const Careers = () => {
         {/* Open Positions */}
         <section className="py-16 lg:py-24 bg-secondary/50">
           <div className="container mx-auto px-4 lg:px-8">
-            <div className="text-center max-w-3xl mx-auto mb-12">
+            <div 
+              ref={positionsHeaderAnimation.ref}
+              className={`text-center max-w-3xl mx-auto mb-12 scroll-fade-up ${positionsHeaderAnimation.isVisible ? 'visible' : ''}`}
+            >
               <h2 className="text-3xl md:text-4xl font-heading font-bold text-foreground mb-4">
                 Open Positions
               </h2>
@@ -106,14 +116,17 @@ const Careers = () => {
               </p>
             </div>
 
-            <div className="max-w-4xl mx-auto space-y-4">
+            <div 
+              ref={positionsListAnimation.ref}
+              className="max-w-4xl mx-auto space-y-4"
+            >
               {openPositions.map((position, index) => (
                 <div
                   key={index}
-                  className="p-6 rounded-xl bg-card border border-border hover:shadow-medium transition-all duration-300 flex flex-col sm:flex-row sm:items-center justify-between gap-4"
+                  className={`group p-6 rounded-xl bg-card border border-border card-animate scroll-fade-up stagger-${index + 1} flex flex-col sm:flex-row sm:items-center justify-between gap-4 ${positionsListAnimation.isVisible ? 'visible' : ''}`}
                 >
                   <div>
-                    <h3 className="text-lg font-heading font-semibold text-foreground mb-2">
+                    <h3 className="text-lg font-heading font-semibold text-foreground mb-2 group-hover:text-primary transition-colors">
                       {position.title}
                     </h3>
                     <div className="flex flex-wrap gap-4 text-sm text-muted-foreground">
@@ -132,8 +145,8 @@ const Careers = () => {
                     </div>
                   </div>
                   <Link to="/contact">
-                    <Button variant="outline" size="sm">
-                      Apply Now <ArrowRight className="w-4 h-4" />
+                    <Button variant="outline" size="sm" className="hover-scale group">
+                      Apply Now <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
                     </Button>
                   </Link>
                 </div>
@@ -145,8 +158,8 @@ const Careers = () => {
                 Don't see a position that fits? Send us your resume anyway!
               </p>
               <Link to="/contact">
-                <Button variant="default">
-                  Contact Us <ArrowRight className="w-4 h-4" />
+                <Button variant="default" className="btn-animate group">
+                  Contact Us <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
                 </Button>
               </Link>
             </div>

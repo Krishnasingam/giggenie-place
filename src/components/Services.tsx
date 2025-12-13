@@ -1,6 +1,10 @@
 import { Code, Cloud, Shield, Database, Smartphone, Brain } from "lucide-react";
+import useScrollAnimation from "@/hooks/useScrollAnimation";
 
 const Services = () => {
+  const headerAnimation = useScrollAnimation({ threshold: 0.2 });
+  const gridAnimation = useScrollAnimation({ threshold: 0.1 });
+
   const services = [
     {
       icon: Code,
@@ -38,7 +42,10 @@ const Services = () => {
     <section id="services" className="py-24 lg:py-32 bg-background">
       <div className="container mx-auto px-4 lg:px-8">
         {/* Section Header */}
-        <div className="text-center max-w-3xl mx-auto mb-16">
+        <div 
+          ref={headerAnimation.ref}
+          className={`text-center max-w-3xl mx-auto mb-16 scroll-fade-up ${headerAnimation.isVisible ? 'visible' : ''}`}
+        >
           <span className="text-accent font-semibold text-sm uppercase tracking-wider mb-4 block">
             Our Expertise
           </span>
@@ -51,14 +58,16 @@ const Services = () => {
         </div>
 
         {/* Services Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
+        <div 
+          ref={gridAnimation.ref}
+          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8"
+        >
           {services.map((service, index) => (
             <div
               key={service.title}
-              className="group p-8 rounded-2xl bg-card border border-border shadow-soft hover:shadow-medium transition-all duration-300 hover:-translate-y-1"
-              style={{ animationDelay: `${index * 100}ms` }}
+              className={`group p-8 rounded-2xl bg-card border border-border shadow-soft card-animate scroll-fade-up stagger-${index + 1} ${gridAnimation.isVisible ? 'visible' : ''}`}
             >
-              <div className="w-14 h-14 rounded-xl bg-gradient-accent flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
+              <div className="w-14 h-14 rounded-xl bg-gradient-accent flex items-center justify-center mb-6 icon-bounce">
                 <service.icon className="w-7 h-7 text-accent-foreground" />
               </div>
               <h3 className="text-xl font-heading font-semibold text-foreground mb-3">
