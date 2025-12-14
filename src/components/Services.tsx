@@ -39,7 +39,7 @@ const Services = () => {
     {
       icon: Layers,
       title: "ERP Solutions",
-      description: "SAP, Workday, Oracle, PeopleSoft consultants and implementation specialists.",
+      description: "SAP, Oracle, Workday, PeopleSoft, NetSuite, Microsoft Dynamics, and Salesforce experts.",
     },
   ];
 
