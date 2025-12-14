@@ -48,7 +48,7 @@ const Footer = () => {
               <p className="text-background/90 font-medium">PeakEdge IT Solutions LLC</p>
               <div className="flex items-start gap-2 text-background/70">
                 <MapPin className="w-4 h-4 mt-0.5 flex-shrink-0" />
-                <span>1021 E Lincolnway, Cheyenne, WY 82001</span>
+                <span>1021 E Lincolnway, Cheyenne, WY 82001, United States</span>
               </div>
               <a href="tel:+1-469-666-8246" className="flex items-center gap-2 text-background/70 hover:text-background transition-colors">
                 <Phone className="w-4 h-4" />

@@ -109,7 +109,7 @@ const Contact = () => {
                     className="flex items-start gap-3 text-muted-foreground hover:text-foreground transition-colors"
                   >
                     <MapPin className="w-5 h-5 mt-0.5 flex-shrink-0" />
-                    <span>1021 E Lincolnway, Cheyenne, WY 82001</span>
+                    <span>1021 E Lincolnway, Cheyenne, WY 82001, United States</span>
                   </a>
                   <a
                     href="tel:+1-469-666-8246"
