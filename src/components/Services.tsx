@@ -1,4 +1,4 @@
-import { Code, Cloud, Shield, Database, Smartphone, Brain } from "lucide-react";
+import { Code, Cloud, Shield, Database, Smartphone, Brain, Layers } from "lucide-react";
 import useScrollAnimation from "@/hooks/useScrollAnimation";
 
 const Services = () => {
@@ -35,6 +35,11 @@ const Services = () => {
       icon: Brain,
       title: "AI & Machine Learning",
       description: "AI researchers, ML engineers, and NLP specialists for cutting-edge solutions.",
+    },
+    {
+      icon: Layers,
+      title: "ERP Solutions",
+      description: "SAP, Workday, Oracle, PeopleSoft consultants and implementation specialists.",
     },
   ];
 
