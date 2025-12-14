@@ -21,7 +21,7 @@ const Footer = () => {
           {/* Brand Column */}
           <div className="lg:col-span-1">
             <Link to="/" className="flex items-center mb-6">
-              <img src={logo} alt="PeakEdge" className="h-14 w-auto rounded-lg" />
+              <img src={logo} alt="PeakEdge IT Solutions - Global IT Services & Staffing" className="h-14 w-auto rounded-lg" width={143} height={56} loading="lazy" />
             </Link>
             <p className="text-background/70 mb-6 text-sm">
               Global IT Services & Staffing — Delivering excellence from our USA and India offices.

@@ -27,7 +27,7 @@ const Header = () => {
         <div className="flex items-center justify-between h-16 lg:h-20">
           {/* Logo */}
           <Link to="/" className="flex items-center gap-3">
-            <img src={logo} alt="PeakEdge" className="h-12 w-auto" />
+            <img src={logo} alt="PeakEdge IT Solutions - Global IT Services & Staffing" className="h-12 w-auto" width={123} height={48} loading="eager" />
           </Link>
 
           {/* Desktop Navigation */}
