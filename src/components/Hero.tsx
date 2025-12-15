@@ -1,10 +1,23 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Globe, Users, Building2 } from "lucide-react";
 import { Link } from "react-router-dom";
+import heroTeam from "@/assets/hero-team.jpg";
 
 const Hero = () => {
   return (
     <section className="relative min-h-screen bg-hero overflow-hidden">
+      {/* Background Image */}
+      <div className="absolute inset-0">
+        <img 
+          src={heroTeam} 
+          alt="PeakEdge IT team collaborating" 
+          className="w-full h-full object-cover opacity-15"
+          loading="eager"
+          decoding="async"
+          fetchPriority="high"
+        />
+      </div>
+      
       {/* Background Pattern */}
       <div className="absolute inset-0 opacity-10">
         <div className="absolute top-20 left-10 w-72 h-72 bg-primary rounded-full blur-3xl" />

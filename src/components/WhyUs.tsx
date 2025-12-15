@@ -1,5 +1,6 @@
 import { CheckCircle, Clock, Award, Headphones, Globe, Shield } from "lucide-react";
 import useScrollAnimation from "@/hooks/useScrollAnimation";
+import servicesBg from "@/assets/services-bg.jpg";
 
 const WhyUs = () => {
   const headerAnimation = useScrollAnimation({ threshold: 0.2 });
@@ -40,8 +41,19 @@ const WhyUs = () => {
   ];
 
   return (
-    <section id="why-us" className="py-24 lg:py-32 bg-secondary/50">
-      <div className="container mx-auto px-4 lg:px-8">
+    <section id="why-us" className="relative py-24 lg:py-32 bg-secondary/50 overflow-hidden">
+      {/* Background Image */}
+      <div className="absolute inset-0">
+        <img 
+          src={servicesBg} 
+          alt="" 
+          className="w-full h-full object-cover opacity-5"
+          loading="lazy"
+          decoding="async"
+          aria-hidden="true"
+        />
+      </div>
+      <div className="container mx-auto px-4 lg:px-8 relative z-10">
         {/* Section Header */}
         <div 
           ref={headerAnimation.ref}
