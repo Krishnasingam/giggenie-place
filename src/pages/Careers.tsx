@@ -42,9 +42,14 @@ const Careers = () => {
   return (
     <div className="min-h-screen bg-background">
       <Helmet>
-        <title>Careers at PeakEdge — Join Our Global IT Team</title>
-        <meta name="description" content="Join PeakEdge and build your career in IT services and staffing. We have opportunities in USA and India for talented professionals." />
+        <title>IT Careers at PeakEdge | Jobs in Software, Cloud, Data & AI</title>
+        <meta name="description" content="Join PeakEdge IT Solutions LLC. We're hiring software developers, cloud architects, data engineers, and IT consultants. Remote, hybrid & onsite jobs in USA and India." />
+        <meta name="keywords" content="IT jobs, software developer jobs, cloud architect jobs, data engineer jobs, IT consultant careers, PeakEdge careers, remote IT jobs, tech jobs USA, tech jobs India, IT staffing careers" />
         <link rel="canonical" href="https://www.peakedgeit.com/careers" />
+        <meta property="og:title" content="IT Careers at PeakEdge | Software, Cloud & AI Jobs" />
+        <meta property="og:description" content="Join PeakEdge IT Solutions. We're hiring software developers, cloud architects, and data engineers. Remote & onsite positions in USA and India." />
+        <meta property="og:url" content="https://www.peakedgeit.com/careers" />
+        <meta property="og:type" content="website" />
       </Helmet>
 
       <Header />
@@ -52,12 +57,16 @@ const Careers = () => {
         {/* Hero Section */}
         <section className="py-16 lg:py-24 bg-hero">
           <div className="container mx-auto px-4 lg:px-8 text-center">
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-heading font-bold text-primary-foreground mb-6 animate-fade-up">
-              Join Our Team
+            <span className="inline-block px-4 py-2 rounded-full bg-primary-foreground/10 text-primary-foreground text-sm font-medium mb-6 animate-fade-up">
+              Join Our Growing Team
+            </span>
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-heading font-bold text-primary-foreground mb-6 animate-fade-up delay-100">
+              IT Careers at PeakEdge
             </h1>
-            <p className="text-lg md:text-xl text-primary-foreground/80 max-w-2xl mx-auto animate-fade-up delay-100">
-              Build your career with a global IT company that values innovation, 
-              collaboration, and professional growth.
+            <p className="text-lg md:text-xl text-primary-foreground/80 max-w-3xl mx-auto animate-fade-up delay-200">
+              Build your career with PeakEdge IT Solutions LLC. We offer exciting opportunities 
+              in software development, cloud architecture, data engineering, and AI/ML for 
+              talented professionals in USA and India.
             </p>
           </div>
         </section>
@@ -69,12 +78,16 @@ const Careers = () => {
               ref={whyJoinAnimation.ref}
               className={`text-center max-w-3xl mx-auto mb-12 scroll-fade-up ${whyJoinAnimation.isVisible ? 'visible' : ''}`}
             >
+              <span className="text-primary font-semibold text-sm uppercase tracking-wider mb-4 block">
+                Why Work With Us
+              </span>
               <h2 className="text-3xl md:text-4xl font-heading font-bold text-foreground mb-4">
-                Why Work at PeakEdge?
+                Why Choose a Career at PeakEdge IT Solutions?
               </h2>
               <p className="text-muted-foreground text-lg">
-                We offer competitive benefits, flexible work arrangements, and opportunities 
-                to work on exciting projects with clients worldwide.
+                PeakEdge offers competitive benefits, flexible remote and hybrid work arrangements, 
+                and opportunities to work on cutting-edge projects with enterprise clients worldwide. 
+                Join our team of 100+ IT consultants.
               </p>
             </div>
 
@@ -83,10 +96,10 @@ const Careers = () => {
               className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-16"
             >
               {[
-                { emoji: "🌍", title: "Global Exposure", desc: "Work with clients across the world" },
-                { emoji: "📈", title: "Career Growth", desc: "Clear paths for advancement" },
-                { emoji: "🏠", title: "Flexible Work", desc: "Remote and hybrid options" },
-                { emoji: "💡", title: "Innovation", desc: "Work on cutting-edge tech" },
+                { emoji: "🌍", title: "Global IT Projects", desc: "Work with Fortune 500 clients across USA and worldwide" },
+                { emoji: "📈", title: "Career Growth", desc: "Clear advancement paths in software, cloud, and data roles" },
+                { emoji: "🏠", title: "Remote & Hybrid", desc: "Flexible work options from USA or India offices" },
+                { emoji: "💡", title: "Cutting-Edge Tech", desc: "AWS, Azure, AI/ML, and modern development stacks" },
               ].map((benefit, index) => (
                 <div 
                   key={benefit.title}
@@ -108,11 +121,15 @@ const Careers = () => {
               ref={positionsHeaderAnimation.ref}
               className={`text-center max-w-3xl mx-auto mb-12 scroll-fade-up ${positionsHeaderAnimation.isVisible ? 'visible' : ''}`}
             >
+              <span className="text-primary font-semibold text-sm uppercase tracking-wider mb-4 block">
+                Current Openings
+              </span>
               <h2 className="text-3xl md:text-4xl font-heading font-bold text-foreground mb-4">
-                Open Positions
+                IT Jobs at PeakEdge Solutions
               </h2>
               <p className="text-muted-foreground text-lg">
-                Explore our current openings and find your next opportunity
+                Explore our current IT job openings in software development, cloud engineering, 
+                data analytics, and more. Remote and onsite positions available.
               </p>
             </div>
 
@@ -155,11 +172,12 @@ const Careers = () => {
 
             <div className="text-center mt-12">
               <p className="text-muted-foreground mb-4">
-                Don't see a position that fits? Send us your resume anyway!
+                Don't see a position that fits? We're always looking for talented IT professionals. 
+                Send us your resume for future opportunities at PeakEdge IT Solutions.
               </p>
               <Link to="/contact">
                 <Button variant="default" className="btn-animate group">
-                  Contact Us <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
+                  Submit Your Resume <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
                 </Button>
               </Link>
             </div>

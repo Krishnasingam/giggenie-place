@@ -67,12 +67,14 @@ const Contact = () => {
   return (
     <div className="min-h-screen bg-background">
       <Helmet>
-        <title>Contact PeakEdge — Get in Touch | IT Services & Staffing</title>
-        <meta name="description" content="Contact PeakEdge for IT staffing and services. Reach our USA office in Cheyenne, Wyoming or India office in Hyderabad. We respond within 24 hours." />
+        <title>Contact PeakEdge IT Solutions | IT Staffing & Consulting Inquiries</title>
+        <meta name="description" content="Contact PeakEdge IT Solutions LLC for IT staffing, C2C arrangements, software development, and consulting services. USA office: (469) 666-8246. India office in Hyderabad. 24-hour response." />
+        <meta name="keywords" content="contact PeakEdge, IT staffing inquiry, C2C staffing contact, IT consulting contact, PeakEdge IT Solutions contact, hire IT consultants, software development inquiry, USA IT staffing, India IT services" />
         <link rel="canonical" href="https://www.peakedgeit.com/contact" />
-        <meta property="og:title" content="Contact PeakEdge — Get in Touch" />
-        <meta property="og:description" content="Contact PeakEdge for IT staffing and services. USA and India offices available." />
+        <meta property="og:title" content="Contact PeakEdge IT Solutions | IT Staffing Inquiries" />
+        <meta property="og:description" content="Contact PeakEdge IT Solutions LLC for IT staffing and consulting. USA office: (469) 666-8246. India delivery center in Hyderabad. We respond within 24 hours." />
         <meta property="og:url" content="https://www.peakedgeit.com/contact" />
+        <meta property="og:type" content="website" />
       </Helmet>
 
       <Header />
@@ -80,12 +82,16 @@ const Contact = () => {
         {/* Hero Section */}
         <section className="py-16 lg:py-24 bg-hero">
           <div className="container mx-auto px-4 lg:px-8 text-center">
+            <span className="inline-block px-4 py-2 rounded-full bg-primary-foreground/10 text-primary-foreground text-sm font-medium mb-6">
+              We Respond Within 24 Hours
+            </span>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-heading font-bold text-primary-foreground mb-6">
-              Get in Touch
+              Contact PeakEdge IT Solutions
             </h1>
-            <p className="text-lg md:text-xl text-primary-foreground/80 max-w-2xl mx-auto">
-              Have a question or want to discuss how we can help your business?
-              Reach out to our USA or India offices — we respond within 24 hours.
+            <p className="text-lg md:text-xl text-primary-foreground/80 max-w-3xl mx-auto">
+              Ready to discuss IT staffing, C2C arrangements, software development, or consulting services? 
+              Reach out to our USA or India offices. PeakEdge IT Solutions LLC is here to help 
+              you build your dream technology team.
             </p>
           </div>
         </section>
@@ -93,6 +99,18 @@ const Contact = () => {
         {/* Office Locations Section */}
         <section className="py-16 lg:py-24">
           <div className="container mx-auto px-4 lg:px-8">
+            <div className="text-center max-w-3xl mx-auto mb-12">
+              <span className="text-primary font-semibold text-sm uppercase tracking-wider mb-4 block">
+                Our Office Locations
+              </span>
+              <h2 className="text-3xl md:text-4xl font-heading font-bold text-foreground mb-4">
+                PeakEdge IT Solutions Offices
+              </h2>
+              <p className="text-muted-foreground text-lg">
+                Contact our US headquarters for North American IT staffing and consulting, 
+                or reach our India delivery center for offshore development services.
+              </p>
+            </div>
             <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto mb-16">
               {/* USA Office */}
               <div id="usa" className="scroll-mt-24 p-8 rounded-2xl bg-card border border-border shadow-soft">
@@ -177,11 +195,15 @@ const Contact = () => {
             {/* Contact Form */}
             <div className="max-w-2xl mx-auto">
               <div className="bg-card rounded-2xl p-8 lg:p-10 shadow-soft border border-border">
+                <span className="text-primary font-semibold text-sm uppercase tracking-wider mb-2 block text-center">
+                  IT Staffing & Consulting Inquiry
+                </span>
                 <h2 className="text-2xl font-heading font-bold text-foreground mb-2 text-center">
-                  Send us a Message
+                  Request IT Services from PeakEdge
                 </h2>
                 <p className="text-muted-foreground text-center mb-8">
-                  Fill out the form below and we'll get back to you within 24 hours.
+                  Tell us about your IT staffing needs, C2C requirements, or consulting project. 
+                  Our team responds within 24 hours.
                 </p>
                 <form onSubmit={handleSubmit} className="space-y-6">
                   <div className="grid sm:grid-cols-2 gap-4">
