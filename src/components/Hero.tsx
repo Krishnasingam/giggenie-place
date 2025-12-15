@@ -42,29 +42,29 @@ const Hero = () => {
             Global IT Services • USA & India
           </div>
 
-          {/* Headline */}
+          {/* SEO-Optimized H1 Headline */}
           <h1 className="text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-heading font-bold text-primary-foreground leading-tight mb-6 animate-fade-up delay-100">
-            PeakEdge — Global IT
-            <span className="text-gradient"> Services & Staffing</span>
+            PeakEdge IT Solutions —
+            <span className="text-gradient"> Enterprise IT Staffing & Consulting</span>
           </h1>
 
-          {/* Subheadline */}
+          {/* Subheadline with keywords */}
           <p className="text-lg md:text-xl text-primary-foreground/70 max-w-3xl mx-auto mb-10 animate-fade-up delay-200">
-            Delivering staffing, software engineering, cloud, data, and AI solutions 
-            from our USA and India offices.
+            US IT staffing, software development, cloud consulting, and AI & data analytics 
+            services. Trusted by enterprises across USA and India.
           </p>
 
           {/* Modern CTAs */}
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-16 animate-fade-up delay-300">
             <Link to="/contact">
               <Button variant="hero" size="xl" className="w-full sm:w-auto btn-animate">
-                Get Started
+                Get Started Today
                 <ArrowRight className="w-5 h-5 transition-transform group-hover:translate-x-1" />
               </Button>
             </Link>
             <a href="/#services">
               <Button variant="heroOutline" size="xl" className="w-full sm:w-auto hover-scale">
-                Explore Services
+                View Our Services
               </Button>
             </a>
           </div>

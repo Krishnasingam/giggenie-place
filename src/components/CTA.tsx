@@ -28,11 +28,12 @@ const CTA = () => {
             {/* Left Content */}
             <div>
               <h2 className="text-3xl md:text-4xl lg:text-5xl font-heading font-bold text-primary-foreground mb-6">
-                Ready to Build Your Dream Team?
+                IT Staffing Solutions for US Enterprises
               </h2>
               <p className="text-primary-foreground/80 text-lg mb-8">
-                Whether you need one developer or an entire engineering team, 
-                we're here to help. Let's discuss your requirements.
+                From contract IT staffing to full-time hiring and C2C arrangements, 
+                PeakEdge Staffing delivers qualified candidates within 48 hours. 
+                Let us build your dream technology team.
               </p>
               
               <div className="flex flex-col sm:flex-row gap-4">

@@ -60,15 +60,16 @@ const WhyUs = () => {
           className={`text-center max-w-3xl mx-auto mb-16 scroll-fade-up ${headerAnimation.isVisible ? 'visible' : ''}`}
         >
           <span className="text-primary font-semibold text-sm uppercase tracking-wider mb-4 block">
-            Why Choose Us
+            Why Choose PeakEdge for IT Consulting
           </span>
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-heading font-bold text-foreground mb-6">
-            Why Choose
-            <span className="text-gradient"> PeakEdge</span>
+            Trusted IT Staffing Partner for
+            <span className="text-gradient"> US Enterprises</span>
           </h2>
           <p className="text-muted-foreground text-lg">
-            With over a decade of experience in IT services and staffing, we've refined our process 
-            to deliver exceptional results every time. Here's what sets us apart.
+            PeakEdge IT Solutions LLC combines onshore reliability with offshore scalability. 
+            With 12+ years of experience, we deliver pre-vetted IT talent and consulting services 
+            that drive digital transformation.
           </p>
         </div>
 
