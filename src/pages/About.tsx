@@ -4,6 +4,8 @@ import { Link } from "react-router-dom";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { Helmet } from "react-helmet-async";
+import aboutTeam from "@/assets/about-team.jpg";
+import globalOffices from "@/assets/global-offices.jpg";
 
 const About = () => {
   const values = [
@@ -43,8 +45,17 @@ const About = () => {
       <Header />
       <main className="pt-20">
         {/* Hero Section */}
-        <section className="py-16 lg:py-24 bg-hero">
-          <div className="container mx-auto px-4 lg:px-8">
+        <section className="relative py-16 lg:py-24 bg-hero overflow-hidden">
+          <div className="absolute inset-0">
+            <img 
+              src={aboutTeam} 
+              alt="PeakEdge team meeting" 
+              className="w-full h-full object-cover opacity-20"
+              loading="eager"
+              decoding="async"
+            />
+          </div>
+          <div className="container mx-auto px-4 lg:px-8 relative z-10">
             <div className="max-w-4xl mx-auto text-center">
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-heading font-bold text-primary-foreground mb-6">
                 About PeakEdge
@@ -106,8 +117,17 @@ const About = () => {
         </section>
 
         {/* Office Locations Section */}
-        <section className="py-16 lg:py-24 bg-secondary/50">
-          <div className="container mx-auto px-4 lg:px-8">
+        <section className="relative py-16 lg:py-24 bg-secondary/50 overflow-hidden">
+          <div className="absolute inset-0">
+            <img 
+              src={globalOffices} 
+              alt="Global offices - USA and India" 
+              className="w-full h-full object-cover opacity-10"
+              loading="lazy"
+              decoding="async"
+            />
+          </div>
+          <div className="container mx-auto px-4 lg:px-8 relative z-10">
             <div className="text-center max-w-3xl mx-auto mb-12">
               <span className="text-primary font-semibold text-sm uppercase tracking-wider mb-4 block">
                 Global Presence
