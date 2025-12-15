@@ -34,12 +34,14 @@ const About = () => {
   return (
     <div className="min-h-screen bg-background">
       <Helmet>
-        <title>About PeakEdge — Global IT Services & Staffing Company</title>
-        <meta name="description" content="Learn about PeakEdge, a global IT services and staffing company with offices in USA and India. Delivering software engineering, cloud, data and AI solutions worldwide." />
+        <title>About PeakEdge IT Solutions LLC | US IT Staffing & Consulting Company</title>
+        <meta name="description" content="PeakEdge IT Solutions LLC is a leading IT staffing and consulting company with offices in USA and India. 12+ years delivering software development, cloud, AI & data analytics solutions to Fortune 500 enterprises." />
+        <meta name="keywords" content="PeakEdge IT Solutions, PeakEdge IT Solutions LLC, PeakEdge Solutions Pvt Ltd, IT staffing company, IT consulting firm, software development company USA, cloud consulting, data analytics, AI solutions, enterprise IT services" />
         <link rel="canonical" href="https://www.peakedgeit.com/about" />
-        <meta property="og:title" content="About PeakEdge — Global IT Services & Staffing" />
-        <meta property="og:description" content="Global IT services and staffing company with offices in USA and India." />
+        <meta property="og:title" content="About PeakEdge IT Solutions LLC | US IT Staffing & Consulting" />
+        <meta property="og:description" content="Leading IT staffing and consulting company with 12+ years experience. PeakEdge IT Solutions LLC (USA) and PeakEdge Solutions Pvt Ltd (India) deliver enterprise-grade technology solutions." />
         <meta property="og:url" content="https://www.peakedgeit.com/about" />
+        <meta property="og:type" content="website" />
       </Helmet>
 
       <Header />
@@ -57,12 +59,16 @@ const About = () => {
           </div>
           <div className="container mx-auto px-4 lg:px-8 relative z-10">
             <div className="max-w-4xl mx-auto text-center">
+              <span className="inline-block px-4 py-2 rounded-full bg-primary-foreground/10 text-primary-foreground text-sm font-medium mb-6">
+                Trusted IT Staffing Partner Since 2012
+              </span>
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-heading font-bold text-primary-foreground mb-6">
-                About PeakEdge
+                About PeakEdge IT Solutions
               </h1>
-              <p className="text-lg md:text-xl text-primary-foreground/80 max-w-2xl mx-auto">
-                A global technology company committed to delivering exceptional IT services 
-                and staffing solutions from our offices in USA and India.
+              <p className="text-lg md:text-xl text-primary-foreground/80 max-w-3xl mx-auto">
+                PeakEdge IT Solutions LLC is a premier IT services and staffing company delivering 
+                enterprise-grade technology solutions. With offices in the USA and India, we combine 
+                onshore reliability with offshore scalability for Fortune 500 enterprises.
               </p>
             </div>
           </div>
@@ -77,17 +83,26 @@ const About = () => {
                   Our Mission
                 </span>
                 <h2 className="text-3xl md:text-4xl font-heading font-bold text-foreground mb-6">
-                  Empowering Businesses Through Technology
+                  Empowering Enterprises Through IT Staffing & Consulting
                 </h2>
                 <p className="text-muted-foreground text-lg mb-6">
-                  At PeakEdge, our mission is to bridge the gap between exceptional IT talent 
-                  and organizations seeking to innovate and grow. We leverage our global presence 
-                  to deliver world-class solutions that drive business transformation.
+                  At PeakEdge IT Solutions LLC, our mission is to bridge the gap between exceptional 
+                  IT talent and organizations seeking to innovate and grow. We specialize in US IT staffing, 
+                  contract and full-time hiring, C2C staffing arrangements, and comprehensive IT consulting 
+                  services that accelerate digital transformation.
+                </p>
+                <p className="text-muted-foreground text-lg mb-6">
+                  Our team of 100+ pre-vetted IT consultants delivers expertise across software development, 
+                  cloud migration (AWS, Azure, GCP), data analytics, AI & machine learning, and ERP/SAP 
+                  consulting. Whether you need skilled developers for short-term projects or dedicated 
+                  teams for enterprise implementations, PeakEdge Staffing delivers qualified candidates 
+                  within 48 hours.
                 </p>
                 <p className="text-muted-foreground text-lg">
-                  With over a decade of experience in IT services and staffing, we've built 
-                  a reputation for excellence, reliability, and client-centric delivery across 
-                  industries ranging from startups to Fortune 500 companies.
+                  With over 12 years of experience serving startups to Fortune 500 companies, 
+                  PeakEdge Solutions Private Limited has built a reputation for excellence, reliability, 
+                  and a 99% client satisfaction rate across industries including healthcare, finance, 
+                  retail, and technology.
                 </p>
               </div>
               <div className="grid grid-cols-2 gap-6">
@@ -130,13 +145,14 @@ const About = () => {
           <div className="container mx-auto px-4 lg:px-8 relative z-10">
             <div className="text-center max-w-3xl mx-auto mb-12">
               <span className="text-primary font-semibold text-sm uppercase tracking-wider mb-4 block">
-                Global Presence
+                Global IT Delivery Centers
               </span>
               <h2 className="text-3xl md:text-4xl font-heading font-bold text-foreground mb-4">
-                Our Offices
+                US & India Office Locations
               </h2>
               <p className="text-muted-foreground text-lg">
-                Two offices, one mission — delivering excellence across borders
+                Two strategic locations enabling 24/7 support, cost-effective delivery, and seamless 
+                collaboration for clients across North America and worldwide.
               </p>
             </div>
 
@@ -151,9 +167,9 @@ const About = () => {
                 </div>
                 <p className="text-sm font-semibold text-foreground mb-3">PeakEdge IT Solutions LLC</p>
                 <p className="text-muted-foreground mb-4">
-                  Our US headquarters serves as the primary point of contact for North American 
-                  clients, ensuring local compliance, seamless communication, and enterprise-grade 
-                  service delivery.
+                  Our US headquarters handles client relationships, contract IT staffing, C2C arrangements, 
+                  project management, and compliance requirements. We ensure seamless communication and 
+                  enterprise-grade service delivery for North American clients.
                 </p>
                 <div className="space-y-2 text-sm text-muted-foreground">
                   <div className="flex items-start gap-2">
@@ -181,9 +197,10 @@ const About = () => {
                 </div>
                 <p className="text-sm font-semibold text-foreground mb-3">PeakEdge Solutions Pvt Ltd</p>
                 <p className="text-muted-foreground mb-4">
-                  Our India delivery center in Hyderabad leverages the city's rich talent pool 
-                  and technological infrastructure to provide cost-effective, high-quality solutions 
-                  to clients worldwide.
+                  Our India delivery center in Hyderabad, Telangana leverages the city's exceptional 
+                  talent pool for software development, cloud engineering, data analytics, and AI/ML 
+                  solutions. PeakEdge Solutions Private Limited provides cost-effective, high-quality 
+                  offshore and remote IT services to clients worldwide.
                 </p>
                 <div className="space-y-2 text-sm text-muted-foreground">
                   <div className="flex items-start gap-2">
@@ -205,13 +222,14 @@ const About = () => {
           <div className="container mx-auto px-4 lg:px-8">
             <div className="text-center max-w-3xl mx-auto mb-12">
               <span className="text-primary font-semibold text-sm uppercase tracking-wider mb-4 block">
-                What We Stand For
+                What Drives PeakEdge IT Solutions
               </span>
               <h2 className="text-3xl md:text-4xl font-heading font-bold text-foreground mb-4">
                 Our Core Values
               </h2>
               <p className="text-muted-foreground text-lg">
-                The principles that guide everything we do
+                The principles that guide every IT staffing engagement, consulting project, 
+                and client relationship at PeakEdge.
               </p>
             </div>
 
@@ -242,35 +260,39 @@ const About = () => {
             <div className="max-w-4xl mx-auto">
               <div className="text-center mb-12">
                 <span className="text-primary font-semibold text-sm uppercase tracking-wider mb-4 block">
-                  How We Work
+                  Hybrid IT Delivery Model
                 </span>
                 <h2 className="text-3xl md:text-4xl font-heading font-bold text-foreground mb-4">
-                  Our Delivery Approach
+                  Onshore & Offshore IT Staffing Approach
                 </h2>
               </div>
 
               <div className="prose prose-lg max-w-none text-muted-foreground">
                 <p className="mb-6">
-                  PeakEdge operates on a hybrid delivery model that combines the best of both worlds — 
-                  the reliability and compliance of on-shore operations with the scalability and 
-                  cost-effectiveness of offshore delivery.
+                  PeakEdge IT Solutions operates on a hybrid delivery model that combines the best of 
+                  onshore and offshore IT staffing. Our approach balances the reliability and compliance 
+                  of US-based operations with the scalability and cost-effectiveness of our India 
+                  delivery center.
                 </p>
                 <p className="mb-6">
-                  Our US team handles client relationships, project management, and compliance 
-                  requirements, while our India team provides the technical expertise and 
-                  execution capabilities needed for successful project delivery.
+                  Our PeakEdge IT Solutions LLC team in the USA handles client relationships, contract 
+                  negotiations, project management, and compliance requirements for C2C staffing and 
+                  direct placements. Meanwhile, PeakEdge Solutions Pvt Ltd in Hyderabad provides the 
+                  technical expertise in software development, cloud consulting, data analytics, and 
+                  AI/ML implementation.
                 </p>
                 <p>
-                  This approach ensures that our clients receive consistent, high-quality service 
-                  regardless of where the work is performed, with the flexibility to scale teams 
-                  up or down based on project requirements.
+                  This hybrid IT staffing model ensures that our enterprise clients receive consistent, 
+                  high-quality service with 24/7 support coverage, flexible engagement models, and the 
+                  ability to scale teams up or down based on project requirements. Whether you need 
+                  onsite consultants, remote IT professionals, or a blended team, PeakEdge delivers.
                 </p>
               </div>
 
               <div className="text-center mt-12">
                 <Link to="/contact">
                   <Button variant="default" size="lg">
-                    Get Started With PeakEdge
+                    Partner With PeakEdge IT Solutions
                     <ArrowRight className="w-5 h-5" />
                   </Button>
                 </Link>
