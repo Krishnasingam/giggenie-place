@@ -165,15 +165,10 @@ const Contact = () => {
                   PeakEdge Solutions Pvt Ltd
                 </h2>
                 <div className="space-y-3 mb-6">
-                  <a
-                    href="https://maps.google.com/?q=Plot+No.+1-62/18,+Arunodaya+Colony,+Madhapur,+Hyderabad,+Telangana+500081"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="flex items-start gap-3 text-muted-foreground hover:text-foreground transition-colors"
-                  >
+                  <div className="flex items-start gap-3 text-muted-foreground">
                     <MapPin className="w-5 h-5 mt-0.5 flex-shrink-0" />
-                    <span>Plot No. 1-62/18, 4th Floor, Arunodaya Colony, Madhapur, Hyderabad, Telangana 500081, India</span>
-                  </a>
+                    <span>Hyderabad, Telangana, India</span>
+                  </div>
                   <a
                     href="mailto:info@peakedgeit.com"
                     className="flex items-center gap-3 text-muted-foreground hover:text-foreground transition-colors"
@@ -184,14 +179,14 @@ const Contact = () => {
                 </div>
                 <div className="rounded-xl overflow-hidden h-48 border border-border">
                   <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3806.3!2d78.3915!3d17.4485!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb91e5f4a3f1e3%3A0x8b8b8b8b8b8b8b8b!2sMadhapur%2C%20Hyderabad%2C%20Telangana%20500081!5e0!3m2!1sen!2sin!4v1234567890"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d243647.31698779377!2d78.24323!3d17.4123!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb99daeaebd2c7%3A0xae93b78392bafbc2!2sHyderabad%2C%20Telangana%2C%20India!5e0!3m2!1sen!2sus!4v1234567890"
                     width="100%"
                     height="100%"
                     style={{ border: 0 }}
                     allowFullScreen
                     loading="lazy"
                     referrerPolicy="no-referrer-when-downgrade"
-                    title="India Office Map - Madhapur, Hyderabad"
+                    title="India Office Map"
                   />
                 </div>
               </div>
