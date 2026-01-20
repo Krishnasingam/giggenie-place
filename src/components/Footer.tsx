@@ -76,7 +76,7 @@ const Footer = () => {
               <p className="text-background/90 font-medium">PeakEdge Solutions Pvt Ltd</p>
               <div className="flex items-start gap-2 text-background/70">
                 <MapPin className="w-4 h-4 mt-0.5 flex-shrink-0" />
-                <span>Hyderabad, Telangana, India</span>
+                <span>Plot No. 1-62/18, 4th Floor, Arunodaya Colony, Madhapur, Hyderabad, Telangana 500081, India</span>
               </div>
               <a href="mailto:info@peakedgeit.com" className="flex items-center gap-2 text-background/70 hover:text-background transition-colors">
                 <Mail className="w-4 h-4" />
