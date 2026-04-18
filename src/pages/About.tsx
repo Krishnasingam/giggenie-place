@@ -205,7 +205,7 @@ const About = () => {
                 <div className="space-y-2 text-sm text-muted-foreground">
                   <div className="flex items-start gap-2">
                     <MapPin className="w-4 h-4 mt-0.5 flex-shrink-0" />
-                    <span>Hyderabad, Telangana, India</span>
+                    <span>4th Floor, Hive Space 2.0, Ramalayam Rd, Kondapur, HITEC City, Hyderabad, Telangana – 500081, India</span>
                   </div>
                   <a href="mailto:info@peakedgeit.com" className="flex items-center gap-2 hover:text-foreground transition-colors">
                     <Mail className="w-4 h-4" />
