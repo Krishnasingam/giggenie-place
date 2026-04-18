@@ -77,7 +77,7 @@ const Privacy = () => {
               </p>
               <p className="text-muted-foreground">
                 <strong>Email:</strong> info@peakedgeit.com<br />
-                <strong>Phone:</strong> (469) 666-8246<br />
+                <strong>Phone:</strong> (307) 556-7666<br />
                 <strong>Address:</strong> 1021 E Lincolnway, Cheyenne, WY 82001
               </p>
             </div>
