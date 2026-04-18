@@ -73,10 +73,10 @@ const Footer = () => {
           <div>
             <h4 className="font-heading font-semibold mb-4">India</h4>
             <div className="space-y-3 text-sm">
-              <p className="text-background/90 font-medium">PeakEdge Solutions Pvt Ltd</p>
+              <p className="text-background/90 font-medium">PeakEdge Solutions Private Limited</p>
               <div className="flex items-start gap-2 text-background/70">
                 <MapPin className="w-4 h-4 mt-0.5 flex-shrink-0" />
-                <span>Hyderabad, Telangana, India</span>
+                <span>4th Floor, Hive Space 2.0, Ramalayam Rd, Kondapur, Laxmi Cyber City, Whitefields, HITEC City, Hyderabad, Telangana – 500081, India</span>
               </div>
               <a href="mailto:info@peakedgeit.com" className="flex items-center gap-2 text-background/70 hover:text-background transition-colors">
                 <Mail className="w-4 h-4" />
