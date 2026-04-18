@@ -176,10 +176,6 @@ const About = () => {
                     <MapPin className="w-4 h-4 mt-0.5 flex-shrink-0" />
                     <span>1021 E Lincolnway, Cheyenne, WY 82001, United States</span>
                   </div>
-                  <a href="tel:+1-307-556-7666" className="flex items-center gap-2 hover:text-foreground transition-colors">
-                    <Phone className="w-4 h-4" />
-                    <span>(307) 556-7666</span>
-                  </a>
                   <a href="mailto:info@peakedgeit.com" className="flex items-center gap-2 hover:text-foreground transition-colors">
                     <Mail className="w-4 h-4" />
                     <span>info@peakedgeit.com</span>

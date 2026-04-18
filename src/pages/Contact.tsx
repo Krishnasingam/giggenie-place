@@ -130,13 +130,6 @@ const Contact = () => {
                     <span>1021 E Lincolnway, Cheyenne, WY 82001, United States</span>
                   </a>
                   <a
-                    href="tel:+1-307-556-7666"
-                    className="flex items-center gap-3 text-muted-foreground hover:text-foreground transition-colors"
-                  >
-                    <Phone className="w-5 h-5" />
-                    <span>(307) 556-7666</span>
-                  </a>
-                  <a
                     href="mailto:info@peakedgeit.com"
                     className="flex items-center gap-3 text-muted-foreground hover:text-foreground transition-colors"
                   >

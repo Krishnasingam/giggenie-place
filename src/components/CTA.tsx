@@ -43,7 +43,7 @@ const CTA = () => {
                     <ArrowRight className="w-5 h-5 transition-transform group-hover:translate-x-1" />
                   </Button>
                 </Link>
-                <a href="tel:+1-307-556-7666">
+                <Link to="/contact">
                   <Button 
                     variant="ghost" 
                     size="lg" 
@@ -51,7 +51,7 @@ const CTA = () => {
                   >
                     Schedule a Call
                   </Button>
-                </a>
+                </Link>
               </div>
             </div>
 
@@ -68,10 +68,6 @@ const CTA = () => {
                       <MapPin className="w-4 h-4" />
                       <span>1021 E Lincolnway, Cheyenne, WY 82001</span>
                     </div>
-                    <a href="tel:+1-307-556-7666" className="flex items-center gap-2 text-primary-foreground/80 text-sm hover:text-primary-foreground transition-colors">
-                      <Phone className="w-4 h-4" />
-                      <span>(307) 556-7666</span>
-                    </a>
                   </div>
                 </div>
 
