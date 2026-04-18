@@ -68,11 +68,11 @@ const Contact = () => {
     <div className="min-h-screen bg-background">
       <Helmet>
         <title>Contact PeakEdge IT Solutions | IT Staffing & Consulting Inquiries</title>
-        <meta name="description" content="Contact PeakEdge IT Solutions LLC for IT staffing, C2C arrangements, software development, and consulting services. USA office: (307) 556-7666. India office in Hyderabad. 24-hour response." />
+        <meta name="description" content="Contact PeakEdge IT Solutions LLC for IT staffing, C2C arrangements, software development, and consulting services. Offices in USA and India. 24-hour response." />
         <meta name="keywords" content="contact PeakEdge, IT staffing inquiry, C2C staffing contact, IT consulting contact, PeakEdge IT Solutions contact, hire IT consultants, software development inquiry, USA IT staffing, India IT services" />
         <link rel="canonical" href="https://www.peakedgeit.com/contact" />
         <meta property="og:title" content="Contact PeakEdge IT Solutions | IT Staffing Inquiries" />
-        <meta property="og:description" content="Contact PeakEdge IT Solutions LLC for IT staffing and consulting. USA office: (307) 556-7666. India delivery center in Hyderabad. We respond within 24 hours." />
+        <meta property="og:description" content="Contact PeakEdge IT Solutions LLC for IT staffing and consulting. Offices in USA and India. We respond within 24 hours." />
         <meta property="og:url" content="https://www.peakedgeit.com/contact" />
         <meta property="og:type" content="website" />
       </Helmet>
