@@ -79,7 +79,7 @@ const CTA = () => {
                   <div className="space-y-2">
                     <div className="flex items-start gap-2 text-primary-foreground/80 text-sm">
                       <MapPin className="w-4 h-4 mt-0.5 flex-shrink-0" />
-                      <span>4th Floor, Hive Space 2.0, Ramalayam Rd, Kondapur, HITEC City, Hyderabad, Telangana – 500081</span>
+                      <span>4th Floor, Hive Space 2.0, Ramalayam Rd, Kondapur, Laxmi Cyber City, Whitefields, HITEC City, Hyderabad, Telangana – 500081, India</span>
                     </div>
                   </div>
                 </div>
