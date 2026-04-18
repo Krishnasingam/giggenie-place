@@ -184,14 +184,14 @@ const Contact = () => {
                 </div>
                 <div className="rounded-xl overflow-hidden h-48 border border-border">
                   <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d243647.31698779377!2d78.24323!3d17.4123!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb99daeaebd2c7%3A0xae93b78392bafbc2!2sHyderabad%2C%20Telangana%2C%20India!5e0!3m2!1sen!2sus!4v1234567890"
+                    src="https://www.google.com/maps?q=Hive+Space+2.0,+Ramalayam+Rd,+Kondapur,+HITEC+City,+Hyderabad,+Telangana+500081&output=embed"
                     width="100%"
                     height="100%"
                     style={{ border: 0 }}
                     allowFullScreen
                     loading="lazy"
                     referrerPolicy="no-referrer-when-downgrade"
-                    title="India Office Map"
+                    title="India Office Map - Hive Space 2.0, Kondapur, Hyderabad"
                   />
                 </div>
               </div>
